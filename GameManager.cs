@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     {
        
         
-       // Score scorePoint = score.GetComponent<Score>();
+       
     }
     void Update()
     {
@@ -32,10 +32,7 @@ public class GameManager : MonoBehaviour
         {
             Ap2();
         }
-    //    if(scorePoint.number > 6000)
-    //    {
-   //         Ap3();
-   //     }
+   
     }
 
 
@@ -53,17 +50,14 @@ public class GameManager : MonoBehaviour
         ap2.SetActive(false);
         ap3.SetActive(true);
     }
-   // void Ap3 ()
- //   {
- //       ap3.SetActive(false);
-//    }
+  
 
   
 
     public void CharaDestroy()
     {
         Debug.Log("Destroyed");
-        //パーテーションをつける
+       
         Invoke("ToGameOver", 2);
     }
     void ToGameOver()
